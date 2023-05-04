@@ -1,4 +1,4 @@
-job('NodeJS Docker example') {
+job('NodeJS Docker Job example') {
     properties {
     	githubProjectUrl('https://github.com/JulianPinzaru/docker-demo.git')
     }
