@@ -20,7 +20,7 @@ job('NodeJS Docker Job example') {
             repositoryName('iulianpinzaru/docker-nodejs-demo')
             tag('${GIT_REVISION,length=9}')
             dockerRegistryURL('https://registry.hub.docker.com/v2/')
-            registryCredentials('dockerhub')
+            registryCredentials('docker_hub_registry')
             forcePull(false)
             forceTag(false)
             createFingerprints(false)
