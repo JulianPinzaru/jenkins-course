@@ -18,8 +18,8 @@ job('NodeJS Docker Job example') {
     steps {
         dockerBuildAndPublish {
             repositoryName('iulianpinzaru/docker-nodejs-demo')
-            tag('${GIT_REVISION,length=9}')
-            dockerRegistryURL('https://index.docker.io/v2/')
+            // tag('${GIT_REVISION,length=9}')
+            // dockerRegistryURL('https://index.docker.io/v2/')
             registryCredentials('docker_hub_registry')
             noCache(true)
             forcePull(false)
